@@ -3,6 +3,7 @@ import { AndroidIcon, FiapIcon, FlutterIcon, GithubIcon, RefreshIcon, SwiftIcon,
 import { ProfileContainer, RepoList, Repo, Topics, Language } from "./styles";
 import { useProfile } from "./useProfile";
 import { Loader, IconLink } from "./components";
+import levvaLogo from '../../assets/logo-levva.png';
 
 function Profile() {
     const {
@@ -29,7 +30,7 @@ function Profile() {
 
                 <IconLink
                     url="https://levva.io/"
-                    icon={<img src="/assets/logo-levva.png" alt="logo levva" style={{ width: 48 }} />}
+                    icon={<img src={levvaLogo} alt="logo levva" style={{ width: 48 }} />}
                 />
             </p>
 
